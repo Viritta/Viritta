@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="bg"></div>
+<canvas id="snow"></canvas>
+
+<div class="panel">
+
+    <!-- SEARCH -->
+    <form class="searchForm" action="https://www.google.com/search" method="GET">
+        <input id="searchInput" name="q" placeholder="Поиск Google">
+    </form>
+
+    <!-- ICONS -->
+    <div class="icons">
+        <a class="icon" href="https://youtube.com">
+            <img src="data/images/icons/youtube.png"><span>YouTube</span>
+        </a>
+
+        <a class="icon" href="https://chat.openai.com">
+            <img src="data/images/icons/chatgpt.png"><span>ChatGPT</span>
+        </a>
+
+        <a class="icon" href="https://docs.google.com">
+            <img src="data/images/icons/gdocs.png"><span>Docs</span>
+        </a>
+
+        <a class="icon" href="https://www.speedtest.net">
+            <img src="data/images/icons/speedtest.png"><span>Speedtest</span>
+        </a>
+
+        <a class="icon" href="https://chess.com">
+            <img src="data/images/icons/chess.png"><span>Chess</span>
+        </a>
+
+        <a class="icon" href="https://deepl.com">
+            <img src="data/images/icons/deepl.png"><span>DeepL</span>
+        </a>
+    </div>
+
+    <!-- CLOCK -->
+    <div class="clockBlock" id="clockBlock">
+        <div id="clock"></div>
+        <div id="date"></div>
+    </div>
+
+</div>
+
+<!-- SETTINGS -->
+<button id="settingsBtn">⚙</button>
+
+<div id="settings">
+    <h3>Настройки</h3>
+
+    <label><input type="checkbox" id="snowToggle"> Снег</label>
+    <label><input type="checkbox" id="parallaxToggle"> Параллакс</label>
+    <label><input type="checkbox" id="clockToggle"> Часы</label>
+
+    <label>
+        Размытие
+        <input type="range" id="blurRange" min="5" max="40">
+    </label>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
