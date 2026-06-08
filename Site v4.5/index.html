@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Start</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ФОН -->
+<div id="background"></div>
+
+<!-- КАНВАС ДЛЯ СНЕГА -->
+<canvas id="snow"></canvas>
+
+<!-- ИКОНКИ -->
+<div class="icons">
+  <a class="icon" href="https://youtube.com"><img src="icons/youtube.png"><span>YouTube</span></a>
+  <a class="icon" href="https://google.com"><img src="icons/google.png"><span>Google</span></a>
+  <a class="icon" href="https://github.com"><img src="icons/github.png"><span>Github</span></a>
+</div>
+
+<!-- ЧАСЫ -->
+<div class="clock" id="clock"></div>
+
+<!-- КНОПКА НАСТРОЕК -->
+<div class="settingsButton" id="settingsBtn">⚙</div>
+
+<!-- ПАНЕЛЬ НАСТРОЕК -->
+<div class="settings" id="settings">
+  <h3>Background</h3>
+  <div class="bgGrid" id="bgGrid"></div>
+  <label>Blur: <input type="range" id="blurRange" min="0" max="50" value="20"></label>
+</div>
+
+<!-- ТАБЛИЧКА -->
+<div class="credit" id="credit">Powered by Viritta</div>
+
+<script src="script.js"></script>
+</body>
+</html>
