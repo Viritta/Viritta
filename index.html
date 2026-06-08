@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="bg"></div>
+<canvas id="snow"></canvas>
+
+<div class="panel">
+
+    <form class="searchForm" action="https://www.google.com/search" method="GET">
+        <input id="searchInput" name="q" placeholder="Поиск Google">
+    </form>
+
+    <div class="icons">
+        <a href="https://youtube.com" class="icon">
+            <img src="./data/images/icons/youtube.png"><span>YouTube</span>
+        </a>
+
+        <a href="https://chatgpt.com" class="icon">
+            <img src="./data/images/icons/chatgpt.png"><span>ChatGPT</span>
+        </a>
+
+        <a href="https://docs.google.com" class="icon">
+            <img src="./data/images/icons/gdocs.png"><span>Google Docs</span>
+        </a>
+
+        <a href="https://www.speedtest.net" class="icon">
+            <img src="./data/images/icons/speedtest.png"><span>Speedtest</span>
+        </a>
+
+        <a href="https://chess.com" class="icon">
+            <img src="./data/images/icons/chess.png"><span>Chess</span>
+        </a>
+
+        <a href="https://deepl.com" class="icon">
+            <img src="./data/images/icons/deepl.png"><span>DeepL</span>
+        </a>
+    </div>
+
+    <div class="calendar-widget">
+        <div class="calendar-header">Экономический календарь</div>
+        <iframe 
+            src="https://sslecal2.investing.com/?lang=ru&importance=3"
+            width="100%" height="420"></iframe>
+    </div>
+
+    <div class="clockBlock" id="clockBlock">
+        <div id="clock"></div>
+        <div id="date"></div>
+    </div>
+
+</div>
+
+<button id="settingsBtn">⚙</button>
+
+<div id="settings">
+    <h3>Настройки</h3>
+
+    <label><input type="checkbox" id="snowToggle"> Снег</label>
+    <label><input type="checkbox" id="parallaxToggle"> Параллакс</label>
+    <label><input type="checkbox" id="clockToggle"> Часы</label>
+
+    <label>
+        Размытие
+        <input type="range" id="blurRange" min="5" max="40">
+    </label>
+
+    <h4>Обои</h4>
+    <div id="wallpaperList"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
